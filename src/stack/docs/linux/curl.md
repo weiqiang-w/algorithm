@@ -1,6 +1,7 @@
 https://www.thegeekstuff.com/2012/04/curl-examples/
+https://curl.se/docs/httpscripting.html
 
-CURL 
+CURL
 
 -o/-O
 # save file as 123.txt
