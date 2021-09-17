@@ -10,7 +10,7 @@
     2.2>ps H -eo pid,tid,pcpu | sort -n -k 3
     
 3.查看进程的线程
-    3.1>pstree -p pid
+    3.1>pstree -p pid     (pstree 安装 yum -y install psmis)
     3.2>查看线程的相信信息：cat /proc/进程号/task/线程号/status
     
 4.实时线程进程的资源占用信息
