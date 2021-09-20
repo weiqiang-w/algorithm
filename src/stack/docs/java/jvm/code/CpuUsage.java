@@ -20,11 +20,13 @@ public class CpuUsage {
             long now = System.nanoTime();
             int cpuCoreNum = ManagementFactory.getOperatingSystemMXBean().getAvailableProcessors();
             double cpuUsage = cpuCost * 1.0d / ((now - lastSampleTimeNs) * cpuCoreNum) * 100;
-            lastCPUTimeNs = cpuTime;
-            lastSampleTimeNs = now;
 
             double processCpuLoad = ((OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean()).getProcessCpuLoad();
             System.out.println("last::"+lastCPUTimeNs + " cpuTime::" + cpuTime + " cpuCost::" + cpuCost +" swCpuUsage - processCpuLoad "+cpuUsage + " - "+ processCpuLoad * 100);
+
+            lastCPUTimeNs = cpuTime;
+            lastSampleTimeNs = now;
+
         }
     }
 }
