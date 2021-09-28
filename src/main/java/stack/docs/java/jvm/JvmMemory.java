@@ -1,4 +1,4 @@
-package stack.docs.java.jvm.code;
+package stack.docs.java.jvm;
 
 import java.lang.management.*;
 import java.util.ArrayList;

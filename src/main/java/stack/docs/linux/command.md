@@ -17,3 +17,22 @@ $ grep -rn 'ERROR' .
 $ cat data.txt|grep -A 2 '[2]'
 # 查找日志文件中最后产生的10条错误日志，-i用于忽略大小写，tac用于倒序输出行(非常实用)
 tac app.log|grep -i -m10 'ERROR'|tac
+
+--------
+
+ref:
+    https://mp.weixin.qq.com/s?__biz=MzA4MTc4NTUxNQ==&mid=2650519865&idx=1&sn=e6c15ef16b8ee81f71924d9757a8c608&scene=21#wechat_redirect
+    - sed: https://mp.weixin.qq.com/s?__biz=MzA4MTc4NTUxNQ==&mid=2650519751&idx=1&sn=adef39cb108277731608069960692c77&scene=21#wechat_redirect
+    - swk: https://mp.weixin.qq.com/s?__biz=MzA4MTc4NTUxNQ==&mid=2650519843&idx=1&sn=fe4a5c405a35b42a850054eb4283ff40&scene=21#wechat_redirect
+    - vim: https://mp.weixin.qq.com/s?__biz=MzA4MTc4NTUxNQ==&mid=2650518612&idx=1&sn=125c2cb9ee6d76a6817fb0ebc5a3c5e4&scene=21#wechat_redirect
+--- 
+# 查看文件大小
+du -h file
+# 查看某个进程中的线程状态。
+top -H -p pid
+# df命令用来查看系统中磁盘的使用量，用来查看磁盘是否已经到达上限。参数h可以以友好的方式进行展示。
+df -h
+# 查看当前的所有tcp连接。
+netstat -ant
+
+
