@@ -1,5 +1,6 @@
 https://www.thegeekstuff.com/2012/04/curl-examples/
 https://curl.se/docs/httpscripting.html
+https://www.jianshu.com/p/07c4dddae43a
 
 CURL
 
